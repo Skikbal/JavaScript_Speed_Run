@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CountDown Timer</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.min.css"
+      integrity="sha512-UiKdzM5DL+I+2YFxK+7TDedVyVm7HMp/bN85NeWMJNYortoll+Nd6PU9ZDrZiaOsdarOyk9egQm6LOJZi36L2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="dark-mode">
+    <div class="container">
+      <div id="mode">
+        <img src="./asset/dark-mode_11502474.png" alt="dark" id="dark" hidden/>
+        <img src="./asset/sun_14440660.png" alt="light" id="light" />
+      </div>
+      <div class="timer dark-timer" id="timer">
+        <p id="heading">Countdown</p>
+        <div id="timer" class="counter">
+          <div class="days">
+            <p class="numbers" id="dayDisplay">00</p>
+            <p>Days</p>
+          </div>
+          <p class="bar">|</p>
+          <div class="hours">
+            <p class="numbers" id="hourDisplay">00</p>
+            <p>Hours</p>
+          </div>
+          <p class="bar">|</p>
+          <div class="minutes">
+            <p class="numbers" id="minuteDisplay">00</p>
+            <p>Minutes</p>
+          </div>
+          <p class="bar">|</p>
+          <div class="seconds">
+            <p class="numbers" id="secondDisplay">00</p>
+            <p>Seconds</p>
+          </div>
+        </div>
+        <div class="buttons-div">
+          <button id="resume">Resume <i class="fa-solid fa-play"></i></button>
+          <button id="pause">Pause <i class="fa-solid fa-pause"></i></button>
+          <button id="reset">
+            Reset <i class="fa-solid fa-arrow-rotate-right"></i>
+          </button>
+        </div>
+        <div class="form-input">
+          <input type="text" name="day" id="day" placeholder="Days" />
+          <input
+            type="text"
+            name="hour"
+            id="hour"
+            placeholder="Hours"
+            maxlength="2"
+          />
+          <input
+            type="text"
+            name="minute"
+            id="minute"
+            placeholder="Minutes"
+            maxlength="2"
+          />
+          <input
+            type="text"
+            name="second"
+            id="second"
+            placeholder="Seconds"
+            maxlength="2"
+          />
+        </div>
+        <button id="setTimer">
+          Start Countdown <i class="fa-regular fa-hourglass-half"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+      integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.min.js"
+      integrity="sha512-79j1YQOJuI8mLseq9icSQKT6bLlLtWknKwj1OpJZMdPt2pFBry3vQTt+NZuJw7NSd1pHhZlu0s12Ngqfa371EA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
