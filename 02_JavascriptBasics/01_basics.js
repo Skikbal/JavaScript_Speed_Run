@@ -46,9 +46,6 @@ let y = 10;
 // console.log(Math.max(5, 10));
 // console.log(Math.min(5, 10));
 
-console.log(Math.random() * 10);
-
-
 //string concatination
 let firstName = "hitesh"
 let lastName = "Choudhary"
@@ -57,9 +54,9 @@ let fullName = firstName + " " + lastName //hiteshchoudhary
 
 let message = "Hello World"
 
-console.log(message.toUpperCase());
-console.log(message.indexOf("W"));
-console.log(message.slice(0, 5));
+// console.log(message.toUpperCase());
+// console.log(message.indexOf("W"));
+// console.log(message.slice(0, 5));
 
 //string interpolation // templet literal
 let myName = "Hitesh"
