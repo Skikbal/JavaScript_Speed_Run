@@ -1,4 +1,4 @@
-# Math in JS (Built in library)
+# Math functions in JS (Built in library)
 
 ### Math.random()
 
